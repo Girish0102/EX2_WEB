@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Portal - Control Center</title>
+</head>
+
+<body bgcolor="#111827" text="#E5E7EB" link="#38BDF8" alink="#F43F5E" vlink="#A855F7">
+
+    <!-- Top Hero Banner -->
+    <table width="100%" border="0" cellpadding="20" bgcolor="#0F172A">
+        <tr>
+            <td align="center">
+                <font color="#38BDF8" size="6" face="Segoe UI, sans-serif"><b>NOVATECH CORE PORTAL</b></font><br>
+                <font color="#94A3B8" size="3" face="Segoe UI, sans-serif">HTML5 Advanced Web Control Center & Multi-Media Hub | URK24CS1149</font>
+            </td>
+        </tr>
+    </table>
+
+    <hr size="2" color="#38BDF8">
+
+    <!-- Main 3-Column Dashboard Grid -->
+    <table width="100%" border="0" cellpadding="10" cellspacing="5">
+        <tr valign="top">
+
+            <!-- COLUMN 1: Sidebar Navigation & Quick Links (Width: 18%) -->
+            <td width="18%" bgcolor="#1E293B">
+                <table width="100%" border="0" cellpadding="10">
+                    <tr>
+                        <td align="center" bgcolor="#0F172A">
+                            <font color="#38BDF8" size="4"><b>NAVIGATION</b></font>
+                        </td>
+                    </tr>
+                    <tr><td><a href="#register_sec"><font size="3">➔ Account Setup</font></a></td></tr>
+                    <tr><td><a href="#stats_sec"><font size="3">➔ System Metrics</font></a></td></tr>
+                    <tr><td><a href="#media_sec"><font size="3">➔ Video Stream</font></a></td></tr>
+                    <tr><td><a href="#audio_sec"><font size="3">➔ Audio Channel</font></a></td></tr>
+                    <tr><td><a href="#doc_sec"><font size="3">➔ Docs Embed</font></a></td></tr>
+                    <tr><td><a href="#map_sec"><font size="3">➔ GPS Tracker</font></a></td></tr>
+                </table>
+
+                <br><hr color="#334155"><br>
+
+                <!-- System Info Box -->
+                <table width="100%" border="1" cellpadding="8" bgcolor="#0F172A" bordercolor="#334155">
+                    <tr>
+                        <td align="center">
+                            <font color="#10B981" size="2"><b>● SYSTEM ACTIVE</b></font><br><br>
+                            <font color="#94A3B8" size="2">
+                                Version: HTML5 Standard<br>
+                                Protocol: HTTPS<br>
+                                Server: Active Node
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- COLUMN 2: Main Registration Form (Width: 42%) -->
+            <td width="42%" bgcolor="#1E293B">
+                <fieldset id="register_sec">
+                    <legend><font color="#38BDF8" size="4"><b>[ 01. USER REGISTRATION FORM ]</b></font></legend>
+                    <br>
+                    <form action="#" method="get">
+                        <table width="100%" border="0" cellpadding="5">
+                            <tr>
+                                <td>Full Name:</td>
+                                <td><input type="text" name="fullname" size="30" placeholder="Enter Full Name" required></td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="pwd" size="30" placeholder="Enter Password" required></td>
+                            </tr>
+                            <tr>
+                                <td>Email Address:</td>
+                                <td><input type="email" name="email" size="30" placeholder="user@domain.com" required></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number:</td>
+                                <td><input type="tel" name="phone" size="30" placeholder="+91 00000 00000"></td>
+                            </tr>
+                            <tr>
+                                <td>Age & DOB:</td>
+                                <td>
+                                    <input type="number" name="age" min="1" max="100" style="width: 50px;">
+                                    &nbsp; DOB:
+                                    <input type="date" name="dob">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Web Portal:</td>
+                                <td><input type="url" name="website" size="30" placeholder="https://example.com"></td>
+                            </tr>
+                            <tr>
+                                <td>Department:</td>
+                                <td>
+                                    <select name="dept">
+                                        <option value="CSE">Computer Science & Engineering</option>
+                                        <option value="AI">Artificial Intelligence</option>
+                                        <option value="ECE">Electronics & Comm.</option>
+                                        <option value="MECH">Mechanical Engineering</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td>
+                                    <input type="radio" id="m" name="gender" value="Male"><label for="m">Male</label>
+                                    <input type="radio" id="f" name="gender" value="Female"><label for="f">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Skill Set:</td>
+                                <td>
+                                    <input type="checkbox" id="h" name="skills"><label for="h">HTML5</label>
+                                    <input type="checkbox" id="c" name="skills"><label for="c">CSS3</label>
+                                    <input type="checkbox" id="j" name="skills"><label for="j">JS</label>
+                                    <input type="checkbox" id="p" name="skills"><label for="p">Python</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address Note:</td>
+                                <td><textarea name="address" rows="3" cols="30" placeholder="Enter your address details..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>ID Proof:</td>
+                                <td><input type="file" name="doc"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <br>
+                                    <input type="submit" value="Submit Form">
+                                    &nbsp;&nbsp;
+                                    <input type="reset" value="Reset Fields">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+
+            <!-- COLUMN 3: Media Dashboard & Progress Metrics (Width: 40%) -->
+            <td width="40%" bgcolor="#1E293B">
+
+                <!-- Progress Table Section -->
+                <fieldset id="stats_sec">
+                    <legend><font color="#38BDF8" size="4"><b>[ 02. SYSTEM BENCHMARKS ]</b></font></legend>
+                    <table width="100%" border="1" cellpadding="6" bgcolor="#0F172A" bordercolor="#334155">
+                        <tr bgcolor="#0284C7">
+                            <th><font color="white">Core Metric</font></th>
+                            <th><font color="white">Performance Output</font></th>
+                        </tr>
+                        <tr>
+                            <td>HTML5 Standards</td>
+                            <td align="center"><progress value="95" max="100"></progress> 95%</td>
+                        </tr>
+                        <tr>
+                            <td>Form Validation</td>
+                            <td align="center"><progress value="85" max="100"></progress> 85%</td>
+                        </tr>
+                        <tr>
+                            <td>Media Integration</td>
+                            <td align="center"><progress value="90" max="100"></progress> 90%</td>
+                        </tr>
+                        <tr>
+                            <td>Accessibility Score</td>
+                            <td align="center"><progress value="80" max="100"></progress> 80%</td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br>
+
+                <!-- Video Showcase -->
+                <fieldset id="media_sec">
+                    <legend><font color="#38BDF8" size="4"><b>[ 03. VIDEO FEED ]</b></font></legend>
+                    <video width="100%" height="180" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </fieldset>
+
+                <br>
+
+                <!-- Audio Broadcast -->
+                <fieldset id="audio_sec">
+                    <legend><font color="#38BDF8" size="4"><b>[ 04. AUDIO TRANSMISSION ]</b></font></legend>
+                    <audio controls style="width: 100%;">
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </fieldset>
+
+                <br>
+
+                <!-- Embedded Spec Document -->
+                <fieldset id="doc_sec">
+                    <legend><font color="#38BDF8" size="4"><b>[ 05. EMBEDDED DOCUMENT ]</b></font></legend>
+                    <embed src="pdf.pdf" type="application/pdf" width="100%" height="180">
+                </fieldset>
+
+                <br>
+
+                <!-- Embedded GPS Map -->
+                <fieldset id="map_sec">
+                    <legend><font color="#38BDF8" size="4"><b>[ 06. LOCATION TRACKER ]</b></font></legend>
+                    <iframe 
+                        src="https://www.google.com/maps?q=Karunya%20Institute%20of%20Technology%20and%20Sciences&output=embed" 
+                        width="100%" 
+                        height="180" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </fieldset>
+
+            </td>
+
+        </tr>
+    </table>
+
+    <br>
+    <hr size="1" color="#334155">
+
+    <!-- Footer Section -->
+    <table width="100%" border="0" cellpadding="10" bgcolor="#0F172A">
+        <tr>
+            <td align="center">
+                <font color="#94A3B8" size="2" face="Segoe UI, sans-serif">
+                    © 2026 NovaTech Systems | Register ID: URK24CS1149 | Built purely using HTML5 Layout Architecture
+                </font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
